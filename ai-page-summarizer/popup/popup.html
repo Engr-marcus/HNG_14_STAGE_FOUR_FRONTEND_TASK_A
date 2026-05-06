@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Page Summarizer</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>AI Summarizer</h1>
+      <p id="pageTitle">Ready to summarize this page</p>
+    </header>
+
+    <section class="actions">
+      <button id="summarizeBtn" class="primary-btn">
+        Summarize Page
+      </button>
+
+      <button id="clearBtn" class="secondary-btn">
+        Clear
+      </button>
+    </section>
+
+    <section id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <span>Generating summary...</span>
+    </section>
+
+    <section class="meta">
+      <span id="readingTime">Reading time: --</span>
+    </section>
+
+    <section id="summaryContainer" class="summarmey-box">
+      <p class="placeholder">
+        Your summary will appear here.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <button id="copyBtn" class="copy-btn">Copy Summary</button>
+    </footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
