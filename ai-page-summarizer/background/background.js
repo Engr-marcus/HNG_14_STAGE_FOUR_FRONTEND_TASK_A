@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/summarize"; // 🔴 replace this
+const API_URL = "https://your-app.onrender.com/summarize"; // 🔴 replace this
 
 // Listen for messages from popup
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {

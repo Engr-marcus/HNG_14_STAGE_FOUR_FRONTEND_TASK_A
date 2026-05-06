@@ -5,7 +5,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const fetch = require("node-fetch");
 
 app.post("/summarize", async (req, res) => {
   try {
