@@ -34,6 +34,8 @@ const data = await response.json();
 
 console.log("GEMINI RESPONSE:", data);
 
+console.log("GEMINI KEY:", process.env.GEMINI_API_KEY);
+
 const summary =
   data?.candidates?.[0]?.content?.parts?.[0]?.text;
 
