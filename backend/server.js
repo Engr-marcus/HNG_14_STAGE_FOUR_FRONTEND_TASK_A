@@ -33,9 +33,8 @@ app.post("/summarize", async (req, res) => {
 
     const data = await response.json();
 
-    res.json({
-      summary: data.choices?.[0]?.message?.content || "No summary generated"
-    });
+   
+console.log("OPENAI RAW RESPONSE:", JSON.stringify(data, null, 2));
 
   } catch (err) {
     console.error(err);
